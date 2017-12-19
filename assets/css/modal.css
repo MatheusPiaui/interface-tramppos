@@ -1,0 +1,67 @@
+.modal {
+    top:25%;
+    left:22%;
+    position:absolute;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    z-index:40;
+}
+
+.modal > div {
+
+}
+
+.modal:target {
+    opacity: 2;
+    pointer-events: auto;
+
+}
+
+.fechar {
+  /* Style for "Page 1" */
+  width: 35px;
+  height: 35px;
+  background-color: #9b9b9b;
+  position: absolute;
+  right: 35px;
+  top: 24px;
+  border-radius: 100%;
+
+  text-align: center;
+
+
+}
+.fechar a{
+  line-height: 39px;
+
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  /*margin-top: 10px;*/
+  /*padding-top: 10px;*/
+}
+
+
+.modal a{
+  text-decoration: none;
+}
+
+
+/*id de cada modal*/
+#editarServico{
+  /* Style for "Rectangle" */
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+
+  /*box-shadow: 1px 1px 2px 1px #ccc;*/
+  /*background: #fff;*/
+  padding-bottom: 15px;
+  float: left;
+
+
+  /*background: rgba(255, 255, 255,1);*/
+}

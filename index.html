@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trampos - Sistema de Gerenciamento de Jobs</title>
+    <!-- Habilita o sistema para ediçoes responsivas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Adiciona Favicon -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="30x30">
+    <!-- Importar arquivos CSS -->
+    <link rel="stylesheet" href="assets/css/especifico.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/responsivo.css">
+
+    <!-- Impostar os Arquivos JS -->
+    <script src="assets/js/funcoes.js" charset="utf-8"></script>
+    <script src="assets/js/modal.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <!-- Cabeçalho  -->
+    <header class="header-simples">
+      <div class="centraliza">
+        <a href=""><img src="assets/img/logo.png" alt="Trampos"></a>
+        <h1>Um simples cadastro basta</h1>
+        <div class="clear"></div>
+      </div>
+    </header>
+
+    <!-- Pagina de cadastro geral -->
+    <div class="centraliza">
+      <div class="dois-botoes">
+        <button class="ativado" id="btn_cliente" onclick="cadastro('cliente')">Cliente</button>
+        <button class="" id="btn_profissional" onclick="cadastro('profissional')"> Profissional</button>
+        <div class="clear"></div>
+      </div>
+
+      <!-- Formulario de cadastro de clientes -->
+      <form method="post" id="cadastro_cliente">
+        <section class="cadastro">
+          <input type="text" name="nome" placeholder="Nome" class="block" required>
+          <input type="email" name="email" placeholder="Email" class="block" required>
+          <input type="password" name="senha" placeholder="Senha" class="block" required>
+          <input type="tel" name="telefone" placeholder="Telefone" class="block" required>
+
+          <h1>Cadastre seu endereço</h1>
+
+          <select name="logradouro" style="width: 20%;">
+            <option value="rua">Rua</option>
+            <option value="av">Av</option>
+          </select>
+
+          <input type="text" name="endereco" placeholder="Endereco" class="lado" required style="width: 50%;">
+          <input type="text" name="numero" placeholder="Numero" class="lado" required style="width: 18%;">
+        </section>
+
+        <button class="grande block btn-verde" type="submit">Continuar</button>
+      </form>
+
+      <!-- Formulário de cadastro de Profissional -->
+      <form method="post" id="cadastro_profissional" style="display: none;">
+        <section class="cadastro">
+          <input type="text" name="nome" placeholder="Nome Profissional" class="block" required>
+          <input type="email" name="email" placeholder="Email" class="block" required>
+          <input type="password" name="senha" placeholder="Senha" class="block" required>
+          <input type="tel" name="telefone" placeholder="Telefone" class="block" required>
+
+          <h1>Cadastre seu endereço</h1>
+
+          <select name="logradouro" style="width: 20%;">
+            <option value="rua">Rua</option>
+            <option value="av">Av</option>
+          </select>
+
+          <input type="text" name="endereco" placeholder="Endereco" class="lado" required style="width: 50%;">
+          <input type="text" name="numero" placeholder="Numero" class="lado" required style="width: 18%;">
+        </section>
+
+        <button class="grande block btn-verde" type="submit">Continuar</button>
+      </form>
+    </div>
+  </body>
+</html>

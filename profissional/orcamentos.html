@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tramppos - Home Profissional</title>
+    <!-- Habilita o sistema para ediçoes responsivas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Adiciona Favicon -->
+    <link rel="icon" href="../assets/img/favicon.png" type="image/png" sizes="30x30">
+    <!-- Importar arquivos CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/button.css">
+    <link rel="stylesheet" href="../assets/css/input.css">
+    <link rel="stylesheet" href="../assets/css/switch.css">
+    <link rel="stylesheet" href="../assets/css/radio.css">
+
+
+    <!-- script -->
+    <script src="../assets/js/nav.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="../assets/img/logo.png" alt="logo">
+
+      <div class="acao">
+        <img src="../assets/img/perfil.png" alt="foto perfil">
+        <img src="../assets/img/notificacao.png" alt="notific">
+        <img src="../assets/img/sair.png" alt="sair">
+      </div>
+
+      <div class="entrar">
+        <h2>Entrar como
+          <button class="btn-laranja" name="button">Cliente</button>
+        </h2>
+      </div>
+
+
+      <hr>
+
+      <nav>
+        <center>
+          <ul>
+            <li><a id="navHome" onclick="navHome();">Home</a></li>
+            <li><a class="ativo azul" id="navSeusOrcamentos" onclick="navSeusOrcamentos();">Seus orçamentos</a></li>
+          </ul>
+        </center>
+      </nav>
+
+    </header>
+
+    <section>
+      <center>
+        <!-- filtros orçamentos -->
+        <div class="filtrosOrcamento">
+          <div class="flEsq">
+            <form action="#">
+              <h3>Profissões:</h3>
+              <h4>
+                <input type="radio" id="test1" name="radio-group" checked>
+                <label for="test1">Pedreiro</label>
+
+                <input type="radio" id="test2" name="radio-group">
+                <label for="test2">Pintor</label>
+              </h4>
+
+            </form>
+          </div>
+          <div class="flDir">
+            <h3>Mostrar escolhidos
+
+            </h3>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <!-- lista de orçamentos -->
+        <div class="orcamentos">
+
+          <div class="orcamento">
+              <img class="foto" src="" alt="">
+              <a href="#">
+                <button class="editar" type="button" name="editar"><p>Editar</p></button>
+              </a>
+
+              <div class="desc">
+                <h3>Rebocar parede em casa de 7 comodos</h3>
+                <div class="atributos">
+                  <h4 class="esq"><img src="../assets/img/icones/preco.png" alt="preço">   R$ 2.100,00 </h4>
+                  <h4 class="dir"><img src="../assets/img/icones/time.png" alt="preço">   Prazo: 21 dias </h4>
+                </div>
+              </div>
+              <button class="full btn-azul" type="button" name="materiais">Ver lista de materiais</button>
+          </div>
+
+          <div class="orcamento">
+              <img class="foto" src="" alt="">
+              <a href="#">
+                <button class="editar" type="button" name="editar"><p>Editar</p></button>
+              </a>
+
+              <div class="desc">
+                <h3>Rebocar parede em casa de 7 comodos</h3>
+                <div class="atributos">
+                  <h4 class="esq"><img src="../assets/img/icones/preco.png" alt="preço">   R$ 2.100,00 </h4>
+                  <h4 class="dir"><img src="../assets/img/icones/time.png" alt="preço">   Prazo: 21 dias </h4>
+                </div>
+              </div>
+              <button class="full btn-azul" type="button" name="materiais">Ver lista de materiais</button>
+          </div>
+
+
+        </div>
+
+      </center>
+    </section>
+  </body>
+</html>

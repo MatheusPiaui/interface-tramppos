@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tramppos - Home Profissional</title>
+    <!-- Habilita o sistema para ediçoes responsivas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Adiciona Favicon -->
+    <link rel="icon" href="../assets/img/favicon.png" type="image/png" sizes="30x30">
+    <!-- Importar arquivos CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/button.css">
+    <link rel="stylesheet" href="../assets/css/input.css">
+    <!-- script -->
+    <script src="../assets/js/nav.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="../assets/img/logo.png" alt="logo">
+
+      <div class="acao">
+        <img src="../assets/img/perfil.png" alt="foto perfil">
+        <img src="../assets/img/notificacao.png" alt="notific">
+        <img src="../assets/img/sair.png" alt="sair">
+      </div>
+
+      <div class="entrar">
+        <h2>Entrar como
+          <button class="btn-laranja" name="button">Cliente</button>
+        </h2>
+      </div>
+
+
+      <hr>
+
+      <nav>
+        <center>
+          <ul>
+            <li><a class="ativo azul" id="navHome" onclick="navHome();">Home</a></li>
+            <li><a id="navSeusOrcamentos" onclick="navSeusOrcamentos();">Seus orçamentos</a></li>
+          </ul>
+        </center>
+      </nav>
+
+    </header>
+    <section>
+      <center>
+        <!-- filtros de busca -->
+        <div class="filtros">
+            <!-- filtro por cidade -->
+            <div class="filCidade">
+              <h3>
+                <img class="icon" src="../assets/img/icones/point.png">
+                Encontrar serviços em:
+                <select class="est" name="estado">
+                  <option value="">UF</option>
+                  <option value="">Em Avaliação</option>
+                  <option value="">Em Contato</option>
+                  <option value="">Finalizado</option>
+                </select>
+                <select class="" name="cidade">
+                  <option value="">Cidade</option>
+                  <option value="">Em Avaliação</option>
+                  <option value="">Em Contato</option>
+                  <option value="">Finalizado</option>
+                </select>
+
+                <img class="icon flag" src="../assets/img/icones/flag.png">
+                <select class="" name="bairro">
+                  <option value="">Bairro</option>
+                  <option value="">Em Avaliação</option>
+                  <option value="">Em Contato</option>
+                  <option value="">Finalizado</option>
+                </select>
+              </h3>
+            </div>
+
+            <div class="filProfissao">
+              <h3>
+                <img class="icon flag" src="../assets/img/icones/mala.png">
+                <select class="" name="categoria">
+                  <option value="">Categoria</option>
+                  <option value="">Em Avaliação</option>
+                  <option value="">Em Contato</option>
+                  <option value="">Finalizado</option>
+                </select>
+                <select class="" name="profissao">
+                  <option value="">Profissao</option>
+                  <option value="">Em Avaliação</option>
+                  <option value="">Em Contato</option>
+                  <option value="">Finalizado</option>
+                </select>
+              </h3>
+            </div>
+        </div>
+
+        <!-- lista de serviços encontrados -->
+        <div class="servicos">
+
+          <div class="compServico">
+            <!-- imagem do serviço -->
+            <img class="imgServico" src="" alt="Imagem do serviço">
+
+            <div class="descricao">
+              <!-- <button class="editar" type="button" name="button"><a href="#editarServico">Editar</a></button> -->
+              <h3>Rebocar parede em casa de 7 comodos</h3>
+              <br><br>
+              <h4>
+                <img class="icon" src="../assets/img/icones/point2.png">
+                Birigui - São Paulo
+                <button class="btn-azul" type="button" name="button">Fazer orçamento</button>
+              </h4>
+            </div>
+          </div>
+          <div class="compServico">
+            <!-- imagem do serviço -->
+            <img class="imgServico" src="" alt="Imagem do serviço">
+
+            <div class="descricao">
+              <!-- <button class="editar" type="button" name="button"><a href="#editarServico">Editar</a></button> -->
+              <h3>Rebocar parede em casa de 7 comodos</h3>
+              <br><br>
+              <h4>
+                  <img class="icon" src="../assets/img/icones/point2.png">
+                Birigui - São Paulo
+                <button class="btn-azul" type="button" name="button">Fazer orçamento</button>
+
+              </h4>
+            </div>
+          </div>
+          <div class="compServico">
+            <!-- imagem do serviço -->
+            <img class="imgServico" src="" alt="Imagem do serviço">
+
+            <div class="descricao">
+              <!-- <button class="editar" type="button" name="button"><a href="#editarServico">Editar</a></button> -->
+              <h3>Rebocar parede em casa de 7 comodos</h3>
+              <br/><br/>
+              <h4>
+                  <img class="icon" src="../assets/img/icones/point2.png">
+                Birigui - São Paulo
+                <button class="btn-azul" type="button" name="button">Fazer orçamento</button>
+
+              </h4>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </center>
+    </section>
+  </body>
+</html>
